@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/harrison-ifeanyichukwu/rollup-all.git"
+    "url": "https://github.com/harrison-ifeanyichukwu/node-utils.git"
   },
   "keywords": [
     "utility-methods",
@@ -31,9 +31,9 @@
   "author": "Harrison Ifeanyichukwu <Harrisonifeanyichukwu@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/harrison-ifeanyichukwu/rollup-all/issues"
+    "url": "https://github.com/harrison-ifeanyichukwu/node-utils/issues"
   },
-  "homepage": "https://github.com/harrison-ifeanyichukwu/rollup-all#readme",
+  "homepage": "https://github.com/harrison-ifeanyichukwu/node-utils#readme",
   "devDependencies": {
     "@babel/core": "7.4.0",
     "@babel/plugin-proposal-class-properties": "^7.4.0",
