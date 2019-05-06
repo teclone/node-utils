@@ -1,9 +1,22 @@
-import {mkDirSync, isProdEnv, isDevEnv, getEntryPath, isTestEnv} from '../src';
+import {mkDirSync, isProdEnv, isDevEnv, getEntryPath, isTestEnv, joinPaths, resolvePaths} from '../src';
 import * as fs from 'fs';
 import * as path from 'path';
 import rimraf from 'rimraf';
 
 describe('Util', function() {
+
+    describe('.joinPaths(...paths: string[]): string', function() {
+        it(`should join the path arguments and return the result`, function() {
+            expect(joinPaths('/users', '1/profile')).toEqual('/users/1/profile');
+        });
+    });
+
+    describe('.resolvePaths(...paths: string[]): string', function() {
+        it(`should resolve the path arguments and return the result`, function() {
+            expect(resolvePaths('/users', '1/profile')).toEqual('/users/1/profile');
+            expect(resolvePaths('/users', '/1/profile')).toEqual('/1/profile');
+        });
+    });
 
     describe('.getEntryPath()', function() {
         it(`should return the project absolute root directory by inspection`, function() {

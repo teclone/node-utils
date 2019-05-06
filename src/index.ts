@@ -1,6 +1,14 @@
 import * as path from 'path';
 import * as fs from 'fs';
 
+export const joinPaths = (...paths: string[]): string => {
+    return path.join(...paths);
+};
+
+export const resolvePaths = (...paths: string[]): string => {
+    return path.resolve(...paths);
+};
+
 export const getEntryPath = () => {
     /* istanbul ignore if */
     let mainFileName = '';
