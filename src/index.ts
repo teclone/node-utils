@@ -16,11 +16,9 @@ export const getEntryPath = (startPath?: string) => {
   /* istanbul ignore else */
   if (!startPath) {
     mainFileName = require.main ? require.main.filename : __dirname;
-  }
-
-  /* istanbul ignore if */
-  if (mainFileName.indexOf('node_modules') > 0) {
-    return mainFileName.split('/node_modules')[0];
+    if (mainFileName.indexOf('node_modules') > 0) {
+      return mainFileName.split('/node_modules')[0];
+    }
   }
 
   let currentPath: string = path.join(mainFileName, '../');
