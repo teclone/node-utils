@@ -1,20 +1,13 @@
 {
-    "compilerOptions": {
-        "moduleResolution": "node",
-        "target": "esnext",
-        "declaration": true,
-        "declarationDir": "./lib/typings",
-        "noImplicitAny": false,
-        "downlevelIteration": true,
-        "emitDeclarationOnly": true,
-        "lib": [
-            "dom",
-            "es5",
-            "es2015.collection",
-            "es2015.iterable"
-        ]
-    },
-    "include": [
-        "src"
-    ]
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "target": "es2015",
+    "declaration": true,
+    "declarationDir": "./lib/typings",
+    "noImplicitAny": false,
+    "downlevelIteration": true,
+    "emitDeclarationOnly": true,
+    "lib": ["dom", "es5", "es2015.collection", "es2015.iterable"]
+  },
+  "include": ["src"]
 }
