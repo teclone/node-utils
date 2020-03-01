@@ -3,7 +3,7 @@
     "moduleResolution": "node",
     "target": "es2015",
     "declaration": true,
-    "declarationDir": "./lib/typings",
+    "declarationDir": "./lib",
     "noImplicitAny": false,
     "downlevelIteration": true,
     "emitDeclarationOnly": true,

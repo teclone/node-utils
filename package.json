@@ -1,9 +1,9 @@
 {
-  "name": "@forensic-js/node-utils",
+  "name": "@teclone/node-utils",
   "version": "0.0.0-development",
   "description": "A collection of day-to-day utility methods specifically for Node environment",
   "main": "lib/index",
-  "typings": "lib/typings/index",
+  "typings": "lib/index",
   "publishConfig": {
     "access": "public"
   },
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/harrison-ifeanyichukwu/node-utils.git"
+    "url": "https://github.com/teclone/node-utils.git"
   },
   "keywords": [
     "utility-methods",
@@ -31,9 +31,9 @@
   "author": "Harrison Ifeanyichukwu <Harrisonifeanyichukwu@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/harrison-ifeanyichukwu/node-utils/issues"
+    "url": "https://github.com/teclone/node-utils/issues"
   },
-  "homepage": "https://github.com/harrison-ifeanyichukwu/node-utils#readme",
+  "homepage": "https://github.com/teclone/node-utils#readme",
   "devDependencies": {
     "@babel/core": "7.4.0",
     "@babel/plugin-proposal-class-properties": "^7.4.0",
@@ -55,7 +55,7 @@
     "rollup-plugin-commonjs": "9.3.4",
     "rollup-plugin-node-resolve": "3.4.0",
     "rollup-plugin-uglify": "6.0.4",
-    "semantic-release": "^17.0.0",
+    "semantic-release": "^17.0.4",
     "semantic-release-cli": "4.1.2",
     "typescript": "3.7.5"
   },
