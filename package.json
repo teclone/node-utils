@@ -13,7 +13,7 @@
     "watch-test": "BABEL_ENV=test jest --watch",
     "prebuild": "rimraf lib",
     "typings": "tsc --p ./tsconfig.build.json",
-    "build": "rimraf build && yarn typings --declarationDir ./lib && rollup-all",
+    "build": "rimraf lib && yarn typings --declarationDir ./lib && rollup-all",
     "lint": "eslint ./src --fix",
     "report-coverage": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "semantic-release": "semantic-release"
