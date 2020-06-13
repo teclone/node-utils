@@ -54,7 +54,7 @@ export const mkDirSync = (dirPath: string): void => {
     dirPath
       .split(existingPath)[1]
       .split('/')
-      .forEach(pathToken => {
+      .forEach((pathToken) => {
         existingPath = path.join(existingPath, pathToken);
         fs.mkdirSync(existingPath);
       });
@@ -62,23 +62,29 @@ export const mkDirSync = (dirPath: string): void => {
 };
 
 /**
+ * synchronously writes the given data to the given path
+ */
+export const writeFileSync = (
+  filePath: string,
+  data: any,
+  options: fs.WriteFileOptions,
+): void => {
+  mkDirSync(filePath);
+  fs.writeFileSync(filePath, data, options);
+};
+
+/**
  * returns true if running in production environment
  */
 export const isProdEnv = (): boolean => {
-  return (
-    process.env.NODE_ENV &&
-    process.env.NODE_ENV.toLowerCase().indexOf('prod') === 0
-  );
+  return process.env.NODE_ENV && process.env.NODE_ENV.toLowerCase().indexOf('prod') === 0;
 };
 
 /**
  * returns true if running in test environment
  */
 export const isTestEnv = (): boolean => {
-  return (
-    process.env.NODE_ENV &&
-    process.env.NODE_ENV.toLowerCase().indexOf('test') === 0
-  );
+  return process.env.NODE_ENV && process.env.NODE_ENV.toLowerCase().indexOf('test') === 0;
 };
 
 /**
