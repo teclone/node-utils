@@ -67,7 +67,7 @@ export const mkDirSync = (dirPath: string): void => {
 export const writeFileSync = (
   filePath: string,
   data: any,
-  options: fs.WriteFileOptions,
+  options?: fs.WriteFileOptions,
 ): void => {
   mkDirSync(filePath);
   fs.writeFileSync(filePath, data, options);
